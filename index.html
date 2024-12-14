@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8 >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#c32424">
+    <title>Mealify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+</head>
+
+<body>
+
+    <!---------------------------------------- Nav  -------------------------------------------->
+    <nav class="nav">
+        <div class="container">
+            <a href="#home">
+                <img src="https://res.cloudinary.com/dvgqyejfc/image/upload/v1733857308/Screenshot_2024-12-10_210035-removebg-preview_u4hbxl.png" alt="Mealify Logo" class="logo-image">
+            <h1>MGR</h1>  
+            </a>
+            <div class="links" id="nav-links">
+                <ul>
+                    <li class="close">
+                        <a href="#home"><i class="fa-solid fa-xmark"></i></a>
+                    </li>
+                    <li><a href="#home" class="llink">الرئيسية</a></li>
+                    <li><a href="#chefs" class="llink">الاصناف الرئيسية </a></li>
+                    
+                    <li><a href="#contact" class="llink">تواصل معنا</a></li>
+
+
+                </ul>
+            </div>
+            <div class="mode-group">
+                <label for="mode" class="dark">
+                    <i class="fa-solid fa-moon"></i>
+                </label>
+                <label for="mode" class="light">
+                    <i class="fa-regular fa-sun"></i></label>
+                <input type="checkbox" id="mode" class="mode" hidden="" aria-hidden="">
+            </div>
+            <a href="#nav-links" class="menu-icon"><i class="fa-solid fa-bars"></i></a>
+        </div>
+
+    </nav>
+    <!---------------------------------------- Home  -------------------------------------------->
+    <section id="home">
+        
+        <div class="container">
+            
+            <div class="child home-content">
+                <h1>خلطة الشوايه </h1>
+                  <h2>  حان وقت التذوق.. دعنا نشعل الفحم!</h2>
+                <p>مرحبًا بكم في <strong>مطعم خلطة الشواية</strong>، الوجهة المثالية لعشاق المشاوي والطعام الشهي! 
+                    نقدم لكم تجربة فريدة من نوعها تجمع بين الطعم الأصيل والجودة العالية في كل وجبة نقدمها. منذ تأسيسنا، 
+                    نحرص على تقديم أفضل أنواع اللحوم الطازجة والمكونات الطبيعية التي يتم إعدادها بعناية باستخدام 
+                    وصفاتنا الخاصة التي تمنحكم نكهة لا تُنس</p>
+                <div class="home-btns">
+                    <a href="https://www.tiktok.com/@mgr_ksa1/video/7442261297552559367" class="watch-btn"> تعرف علينا</a>
+
+                    <div class="watch-btn">
+                        <div class="watch-icon">
+                            <i class="fa-solid fa-play "></i>
+
+                        </div>
+                        <button class="book-btn" onclick="openModal()">احجز معنا</button>
+                    </div>
+
+                </div>
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal()">&times;</span>
+            
+                    <!-- Form Content -->
+                    <div class="about">
+                        <div class="logo">
+                            <a href="#home">
+                                <img src="https://res.cloudinary.com/dvgqyejfc/image/upload/v1733857308/Screenshot_2024-12-10_210035-removebg-preview_u4hbxl.png" alt="Mealify Logo" class="logo-image">
+                            </a>
+                        </div>
+                        <p>مطعم خلطه الشواية هو الوجهة المثالية لعشاق المأكولات المشوية الذين يبحثون عن تجربة استثنائية تجمع بين الجودة، الأصالة، والإبداع.</p>
+                        <h3 class="social">تابعنااا</h3>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@mgr_ksa1" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/mgr_ksa1/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subscription">
+                        <h3 style="color:#c32424;">انضم إلينا واستمتع بمذاق خلطه الشواية</h3>
+                        <p>نحرص دائمًا على رضا عملائنا من خلال توفير أجواء مريحة ودافئة، وخدمة عملاء متميزة تجعل زيارتكم لدينا تجربة فريدة.</p>
+                        <div class="sub-mail">
+                            <input type="email" placeholder="ارسل تعليقك علي خدمتنا" name="sub-email">
+                            <button><i class="fa-solid fa-envelope"></i> ارسال</button>
+                        </div>
+                    </div>
+                    <div class="communicate">
+                        <h3>كن في تواصل معنا</h3>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>مدينة الجبيل حي الأمير مشهور</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                contact@example.com
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+0133613333">0133613333</a>
+                                <a href="tel:+0534265516">0534265516</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="child home-img">
+                <img src="./img/img/hero-img.png" alt="main dish">
+            </div>
+            
+        </div>
+    </section>
+    <!---------------------------------------- Chefs  -------------------------------------------->
+    <section id="chefs">
+        <div class="main-title">
+                
+            <p>شاهد <span>الاصناف المتنوعة</span></p>
+        </div>
+        <div class="container">
+           
+            <div id="slide">
+                <div class="item" style="background-image: url(./img/img/5arof.jpg);">
+                    <div class="content">
+                        <div class="name">الذبائح</div>
+                        <div class="des">انضم إلينا واستمتع بمذاق خلطه الشواية</div>
+                        <button> <a href="./خلطة الشواية .pdf" target="_blank" class="btn">شاهد الوصفات</a></button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./img/img/twagn.jpg);">
+                    <div class="content">
+                        <div class="name">ايدمات</div>
+                        <div class="des">انضم إلينا واستمتع بمذاق خلطه الشواية</div>
+                        <button> <a href="./خلطة الشواية .pdf" target="_blank" class="btn">شاهد الوصفات</a></button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./img/img/roz.jpg);">
+                    <div class="content">
+                        <div class="name">الوصفات الرئيسية</div>
+                        <div class="des">انضم إلينا واستمتع بمذاق خلطه الشواية</div>
+                        <button> <a href="./خلطة الشواية .pdf" target="_blank" class="btn">شاهد الوصفات</a></button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./img/img/salad.jpg);">
+                    <div class="content">
+                        <div class="name">السلطات</div>
+                        <div class="des">انضم إلينا واستمتع بمذاق خلطه الشواية</div>
+                        <button> <a href="./خلطة الشواية .pdf" target="_blank" class="btn">شاهد الوصفات</a></button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./img/img/konafa.webp);">
+                    <div class="content">
+                        <div class="name">الحلي</div>
+                        <div class="des">انضم إلينا واستمتع بمذاق خلطه الشواية</div>
+                        <button> <a href="./خلطة الشواية .pdf" target="_blank" class="btn">شاهد الوصفات</a></button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./img/img/gallery/meal-6.jpg);">
+                    <div class="content">
+                        <div class="name">LUNDEV</div>
+                        <div class="des">انضم إلينا واستمتع بمذاق خلطه الشواية</div>
+                        <button> <a href="./خلطة الشواية .pdf" target="_blank" class="btn">شاهد الوصفات</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            
+        </div>
+    </section>
+    <!-- ///////////////////////////////////carsoule/////////////////// -->
+
+
+
+
+
+   
+    <!---------------------------------------- Contact  -------------------------------------------->
+    <section id="contact">
+        <div class="container">
+            <div class="main-title">
+                <!-- <h2>الاتصال</h2> -->
+                <p> هل ترييد القدوم؟ <span> مقر المطعم</span></p>
+            </div>
+            <!-- <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.445785295115!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1681863129691!5m2!1sen!2sus">
+            </iframe> -->
+            <div class="social-media-links">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/mgr_ksa1/" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@mgr_ksa1" target="_blank" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1432.199987948453!2d49.6499873!3d26.9996286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e35a1002170df69%3A0x495a674b36e63ca!2z2YXYrdi52YUg2YjYsdmHINi02YbYr9iMINin2YTYp9mHICBNR1I!5e0!3m2!1sen!2ssa!4v1696883586243!5m2!1sen!2ssa" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+            <div class="contact-details">
+                <div class="contact-child">
+                    <div class="icon">
+
+                        <i class="fa-regular fa-map"></i>
+                    </div>
+                    <div class="child-content">
+
+                        <h3>العنوان</h3>
+                        <p>مدينة الجبيل حي الأمير مشهور</p>
+                    </div>
+                </div>
+                <div class="contact-child">
+                    <div class="icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="child-content">
+                        <h3>الايميل</h3>
+                        <p>email@example.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-child">
+                    <div class="icon">
+
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="child-content">
+
+                        <h3>هاتفنا</h3>
+                        <a href="tel:+0133613333">0133613333</a>
+                        <a href="tel:+0534265516">0534265516</a>
+
+                    </div>
+                </div>
+                <div class="contact-child">
+                    <div class="icon">
+
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                    <div class="child-content">
+
+                        <h3>ساعات العمل</h3>
+                        <p><span>الاحد-الجمعة </span> &nbsp; 11AM-23PM </p>
+                    </div>
+                </div>
+               
+            </div>
+            <!-- <form action="">
+                <div class="basic-info">
+                    <input type="text" placeholder="الاسم" name="name" class="name">
+                    <input type="email" placeholder="الايميل" name="email" class="email">
+                </div>
+                <input type="text" placeholder="العنوان" name="subject">
+                <textarea name="message" id="" cols="30" rows="6" placeholder="الرساله"></textarea>
+                <button type="submit">ارسل رسالتك لنا!</button>
+            </form> -->
+        </div>
+
+    </section>
+    <!---------------------------------------- Footer  -------------------------------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="about">
+                <div class="logo">
+                    <a href="#home">
+                        <img src="https://res.cloudinary.com/dvgqyejfc/image/upload/v1733857308/Screenshot_2024-12-10_210035-removebg-preview_u4hbxl.png" alt="Mealify Logo" class="logo-image">
+                      </a>
+                </div>
+                <p>
+                    مطعم خلطه الشواية هو الوجهة المثالية لعشاق المأكولات المشوية الذين يبحثون عن تجربة استثنائية تجمع بين الجودة، الأصالة، والإبداع.</p>
+                <h3 class="social">تابعنااا</h3>
+                <ul>
+                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                    <li>
+                        <a href="https://www.tiktok.com/@mgr_ksa1" target="_blank" rel="noopener noreferrer">
+                          <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/mgr_ksa1/" target="_blank" rel="noopener noreferrer">
+                          <i class="fa-brands fa-instagram"></i>
+                        </a>
+                      </li>
+                </ul>
+            </div>
+            <div class="subscription">
+
+                <h3>انضم إلينا واستمتع بمذاق خلطه الشواية </h3>
+                <p>نحرص دائمًا على رضا عملائنا من خلال توفير أجواء مريحة ودافئة، وخدمة عملاء متميزة تجعل زيارتكم لدينا تجربة فريدة. </p>
+
+                <div class="sub-mail">
+                    <input type="email" placeholder="ارسل تعليقك علي خدمتنا" name="sub-email">
+                    <button><i class="fa-solid fa-envelope"></i> ارسال</button>
+                </div>
+                <div class="quick-links">
+                    <h3>خلطه الشواية</h3> 
+                    <ul>
+                        <li><a href="#home" class="h">الرئيسية</a></li>
+                       
+                    <li><a href="#gallery" class="gallery-link">الاصناف</a></li>
+                    <li><a href="#contact" style:"color: white !important ;" class="contact-link">تواصل معنا</a></li>
+                    </ul>
+                        
+                </div>
+            </div>
+            <div class="communicate">
+                <h3>كن في تواصل معنا</h3>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>مدينة الجبيل حي الأمير مشهور</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        contact@example.com
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+0133613333">0133613333</a>
+                        <a href="tel:+0534265516">0534265516</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

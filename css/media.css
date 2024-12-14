@@ -1,0 +1,189 @@
+@media screen and (max-width: 1400px) {
+
+    #gallery .gallery-imgs {
+        height: 1025px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    nav .container {
+        padding-right: 40px;
+    }
+
+    .menu-icon {
+
+        display: block;
+        margin-right: 40px;
+    }
+
+    nav .container .links {
+        transform: translatex(100%);
+        background-color: white;
+        width: 320px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        padding: 10px;
+    }
+
+    nav .container .links ul {
+        text-align: left;
+        flex-direction: column;
+        padding-inline: 20px;
+    }
+
+    nav .container .links ul li {
+        padding-block: 20px;
+    }
+
+    nav .container .links .close {
+        display: block;
+        text-align: right;
+        font-size: 24px;
+    }
+
+    .mode-group {
+        margin-left: auto;
+        margin-right: 15px;
+
+    }
+
+    #gallery .gallery-imgs {
+        height: 1000px;
+
+    }
+
+    /* ----------------------------------------------------------------------- */
+    footer .container .about,
+    footer .container .communicate {
+        width: calc((100% - var(--gap)*2)/2);
+        order: 1;
+    }
+
+    footer .container .subscription {
+        width: 100%;
+        order: 2;
+
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    #home {
+        width: 100%;
+        /* background-color: var(--light-background); */
+ background-color: #c32424;
+        height: auto;
+    }
+
+    #home .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+
+    #home .child {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .book-btn {
+        border-radius: 30px;
+    }
+
+    /* ---------------------------------------------------------------- */
+    #gallery .gallery-imgs {
+        height: 1650px;
+    }
+
+    #gallery .gallery-imgs .img {
+        width: calc((100% - 20px) / 2);
+
+    }
+
+    .pizza {
+        order: 1;
+    }
+
+    .burger {
+        order: 2;
+    }
+
+    .pizza-slices {
+        order: 3;
+    }
+
+    .omelette {
+        order: 4;
+    }
+
+    .steak {
+        order: 5;
+    }
+
+    .chicken {
+        order: 6;
+    }
+
+    .kebab {
+        order: 7;
+    }
+
+    /* ------------------------------------------------------------------------- */
+    #chefs .card {
+
+        width: calc((100% - 35px)/2);
+
+    }
+
+    /* --------------------------------------------- */
+    #contact .container form .name,
+    #contact .container form .email {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #gallery .gallery-imgs {
+        height: auto;
+    }
+
+    #gallery .gallery-imgs .img {
+        width: 100%;
+
+    }
+
+    /* ----------------------------------------------------------------- */
+    #chefs .card {
+        margin: auto;
+        width: 100%;
+    }
+
+    /* -------------------------------------------------------------------- */
+
+
+    #contact .container .contact-details .contact-child {
+
+        width: 100%;
+
+    }
+
+    /* -------------------------------------------------------------------- */
+    footer .container .about,
+    footer .container .communicate,
+    footer .container .subscription {
+        width: 100%;
+        order: 0;
+    }
+
+    footer .container .communicate li span {
+        max-width: 100%;
+    }
+}
