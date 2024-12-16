@@ -1,8 +1,11 @@
 @media screen and (max-width: 1400px) {
 
-    #gallery .gallery-imgs {
-        height: 1025px;
-    }
+        #chefs {
+            height: 100vh !important; 
+            /* background-color: red; */
+        }
+        
+  
 }
 
 @media screen and (max-width: 1200px) {
@@ -49,9 +52,12 @@
 
     }
 
-    #gallery .gallery-imgs {
-        height: 1000px;
-
+    
+        #chefs {
+            height: 122vh !important; 
+            /* background-color: red; */
+        
+        
     }
 
     /* ----------------------------------------------------------------------- */
@@ -145,7 +151,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
 
     #gallery .gallery-imgs {
         height: auto;
@@ -156,11 +162,7 @@
 
     }
 
-    /* ----------------------------------------------------------------- */
- 
-
-    /* -------------------------------------------------------------------- */
-
+   
 
     #contact .container .contact-details .contact-child {
 
@@ -178,5 +180,59 @@
 
     footer .container .communicate li span {
         max-width: 100%;
+    }
+
+    #chefs {
+        height: 36vh !important; 
+        /* background-color: red; */
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #chefs {
+        height: 48vh !important; 
+        /* background-color: red; */
+    }
+    #home .home-content h1{
+        margin-top: -47px;
+        font-size: 62px;
+    }
+    #home .home-content h2{
+        font-size: 44px;
+    }
+    #home .home-content p{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 900px){
+    #chefs {
+        height: 63vh !important; 
+        /* background-color: red; */
+    }
+    #home .home-content h1{
+        margin-top: -47px;
+        font-size: 62px;
+    }
+    #home .home-content h2{
+        font-size: 44px;
+    }
+    #home .home-content p{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 600px){
+    #chefs {
+        height: 38vh !important; 
+        /* background-color: red; */
+    }
+    #home .home-content h1{
+        margin-top: -47px;
+        font-size: 62px;
+    }
+    #home .home-content h2{
+        font-size: 44px;
+    }
+    #home .home-content p{
+        font-size: 25px;
     }
 }
